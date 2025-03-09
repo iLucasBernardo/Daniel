@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  header section {
+    display: flex;
+    width: auto;
+    height: auto;
+    background: linear-gradient(150deg, #0D1B2A, #1B263B, #485d72, #d9dde2, #eeeeee);
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+  
+  section .foto-perfil {
+    border-radius: 50%;
+    width: 12%;
+    height: 12%;
+    position: relative;
+    top: 20px;
+  }
+  
+  section .logo {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    left: 200px;
+  }
+  
+  .tag {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: relative;
+    top: 5px;
+  }
+  
+  .tag span {
+    padding: 5px;
+    background-color: #0D1B2A;
+    border: solid 2px black;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 14px;
+  }
+  
+  h4 {
+    margin: 2px;
+  }
+  
+  .texto {
+    margin: 20px;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  main footer {
+    background-color: #dcecee;
+  }
+  
+  .whatsapp-button {
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efeito hover */
+  .whatsapp-button:hover {
+    background-color: #128C7E; /* Tom mais escuro de verde do WhatsApp */
+    transform: translateY(-3px); /* Efeito de elevação */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Media Query para telas pequenas (celulares) */
+  @media (max-width: 768px) {
+    header section {
+      flex-direction: row;
+      justify-content: center; /* Alinha os itens no centro */
+      padding: 15px;
+      background: linear-gradient(150deg, #0D1B2A, #1B263B, #485d72, #485d72, #485d72);
+      font-size: 13px;
+    }
+  
+    section .foto-perfil {
+      width: 25%;
+      height: 25%;
+    }
+  
+    section .logo {
+      position: absolute;
+      visibility: hidden;
+    }
+  
+    .tag {
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center; /* Centraliza os itens da tag */
+      align-items: center;
+
+    }
+  
+    .whatsapp-button {
+      padding: 12px 25px;
+      font-size: 14px;
+      margin: 10px auto; /* Centraliza o botão */
+    }
+  
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
