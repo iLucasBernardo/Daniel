@@ -11,8 +11,6 @@
     background: linear-gradient(150deg, #0D1B2A, #1B263B, #485d72, #d9dde2, #eeeeee);
     padding: 25px;
     color: rgb(255, 255, 255);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
   }
   
   .info {
